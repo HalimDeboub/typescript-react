@@ -1,5 +1,7 @@
+import Heading from "./components/Heading";
+
 function App() {
-  return <p className=" text-lg text-slate-300">hello world</p>;
+  return <Heading title="Hello from typescript" />;
 }
 
 export default App;
