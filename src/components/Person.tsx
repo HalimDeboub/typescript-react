@@ -20,7 +20,7 @@ function Heading({ person }: PersonProps): ReactElement {
         />
         <h6>{person.name}</h6>
       </div>
-      <h2>{person.age}</h2>
+      <h5>{person.age} years old</h5>
       <p className="mr-3">{person.note}</p>
     </div>
   );

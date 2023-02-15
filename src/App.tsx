@@ -1,7 +1,8 @@
 import { useState } from "react";
+import Form from "./components/Form";
 import List from "./components/List";
-import Heading from "./components/Person";
-interface IState {
+
+export interface IState {
   people: {
     name: string;
     url: string;
@@ -25,12 +26,13 @@ function App() {
     },
   ]);
   return (
-    <div className="container">
-      <h1 className="text-black text-xl text-center mt-10 font-semibold ">
+    <div className="bg-indigo-900 w-full min-h-screen p-10">
+      <h1 className="text-white text-xl text-center  font-semibold mb-5">
         My Friends List
       </h1>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mb-10">
         <List people={people} />
+        <Form people={people} setPeople={setPeople} />
       </div>
     </div>
   );
